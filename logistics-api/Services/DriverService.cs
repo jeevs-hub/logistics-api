@@ -43,6 +43,7 @@ namespace logistics_api.Services
         {
             var minsWorked = 0;
             var daysWorked = new List<int>();
+            var groupedActivityTimes = new Dictionary<string, int>();
 
             driver.Traces.ToList().ForEach(trace =>
             {
@@ -50,7 +51,15 @@ namespace logistics_api.Services
                 //default behaviour is sunday 0, mon 1 etc
                 var dayWorked = (((int)trace.Date.DayOfWeek) + 6) % 7;
                 daysWorked.Add(dayWorked);
-                minsWorked += trace.Activity.Sum(activity => activity.Duration);
+                trace.Activity.ToList().ForEach(activity =>
+                {
+                    minsWorked += activity.Duration;
+                    int groupedActivityVal = 0;
+                    groupedActivityTimes.TryGetValue(activity.Type, out groupedActivityVal);
+
+                    groupedActivityVal += activity.Duration;
+                    groupedActivityTimes[activity.Type] = groupedActivityVal;
+                });
             });
 
             return new DriverDto
@@ -59,7 +68,8 @@ namespace logistics_api.Services
                 Id = driver.DriverID,
                 Name = $"{driver.Forename} {driver.Surname}",
                 MinsWorked = minsWorked,
-                VehicleRegistration = driver.VehicleRegistration
+                VehicleRegistration = driver.VehicleRegistration,
+                groupedActivityTimes = groupedActivityTimes
             };
         }
     }

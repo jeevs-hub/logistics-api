@@ -30,8 +30,8 @@ namespace logistics_api.Tests
                     VehicleRegistration = "AB123CD",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30 } } },
-                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30, Type = "Work" } } },
+                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45, Type = "Work" } } }
                     }
                 },
                 new Driver
@@ -42,7 +42,7 @@ namespace logistics_api.Tests
                     VehicleRegistration = "EF456GH",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60, Type = "Work" } } }
                     }
                 }
             };
@@ -72,8 +72,8 @@ namespace logistics_api.Tests
                     VehicleRegistration = "AB123CD",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30 } } },
-                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30, Type = "Work" } } },
+                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45, Type = "Work" } } }
                     }
                 },
                 new Driver
@@ -84,7 +84,7 @@ namespace logistics_api.Tests
                     VehicleRegistration = "EF456GH",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60, Type = "Work" } } }
                     }
                 },
                 new Driver 
@@ -95,7 +95,7 @@ namespace logistics_api.Tests
                     VehicleRegistration = "EF456GH",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60, Type = "Work" } } }
                     }
                 }
             };
@@ -122,8 +122,8 @@ namespace logistics_api.Tests
                     VehicleRegistration = "AB123CD",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30 } } },
-                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 01), Activity = new[] { new Activity { Duration = 30, Type = "Work" } } },
+                        new Trace { Date = new System.DateTime(2021, 02, 02), Activity = new[] { new Activity { Duration = 45, Type = "Work" } } }
                     }
                 },
                 new Driver
@@ -134,7 +134,7 @@ namespace logistics_api.Tests
                     VehicleRegistration = "EF456GH",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60, Type = "Work" } } }
                     }
                 },
                 new Driver
@@ -145,7 +145,7 @@ namespace logistics_api.Tests
                     VehicleRegistration = "EF456GH",
                     Traces = new[]
                     {
-                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60 } } }
+                        new Trace { Date = new System.DateTime(2021, 02, 03), Activity = new[] { new Activity { Duration = 60, Type = "Work" } } }
                     }
                 }
             };

@@ -6,6 +6,7 @@
         public string Name { get; set; }
         public string VehicleRegistration { get; set; }
         public IEnumerable<int> daysWorked { get; set; }
+        public Dictionary<string, int> groupedActivityTimes { get; set; }
         public int MinsWorked { get; set; }
     }
 }
