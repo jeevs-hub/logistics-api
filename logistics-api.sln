@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logistics-api", "logistics-api\logistics-api.csproj", "{3BB2B9F5-8F2C-4372-94E6-9F3D8BA4CD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "logistics-api.Tests", "logistics-api.Tests\logistics-api.Tests.csproj", "{5077DE72-E2EB-4CE4-877A-10A50474ED34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BB2B9F5-8F2C-4372-94E6-9F3D8BA4CD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB2B9F5-8F2C-4372-94E6-9F3D8BA4CD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB2B9F5-8F2C-4372-94E6-9F3D8BA4CD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB2B9F5-8F2C-4372-94E6-9F3D8BA4CD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5077DE72-E2EB-4CE4-877A-10A50474ED34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5077DE72-E2EB-4CE4-877A-10A50474ED34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5077DE72-E2EB-4CE4-877A-10A50474ED34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5077DE72-E2EB-4CE4-877A-10A50474ED34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
